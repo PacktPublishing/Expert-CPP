@@ -1,6 +1,6 @@
-//ch14_tdd_v1.h
-#ifndef __CH14_TDD_V1__
-#define __CH14_TDD_V1__
+//ch13_tdd_v1.h
+#ifndef __CH13_TDD_V1__
+#define __CH13_TDD_V1__
 #include <iostream>
 #include <assert.h>
 template< class T>
@@ -24,7 +24,7 @@ private:
 	T* m_buf;
 };
 
-#include "ch14_tdd_v1.cpp"
+#include "ch13_tdd_v1.cpp"
 
 #endif
 

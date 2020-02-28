@@ -1,4 +1,4 @@
-//ch14_unit_test1.cpp
+//ch13_unit_test1.cpp
 #define BOOST_TEST_MODULE my_test  //item 1, "my_test" is module name
 #include <boost/test/included/unit_test.hpp> //item 2, header-only
 

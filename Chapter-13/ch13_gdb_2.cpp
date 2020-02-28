@@ -1,4 +1,4 @@
-//ch14_gdb_2.cpp
+//ch13_gdb_2.cpp
 #include <iostream>
 
 float dotproduct( const float *x, const float *y, const int n);

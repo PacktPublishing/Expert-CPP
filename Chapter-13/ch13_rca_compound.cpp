@@ -1,4 +1,4 @@
-//ch14_rca_compound.cpp
+//ch13_rca_compound.cpp
 #include <iostream>
 int f(int x, int y)
 {

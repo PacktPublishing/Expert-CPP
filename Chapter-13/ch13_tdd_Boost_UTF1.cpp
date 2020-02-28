@@ -1,7 +1,7 @@
-// ch14_tdd_Boost_UTF1.cpp
+// ch13_tdd_Boost_UTF1.cpp
 #define BOOST_TEST_MODULE tdd_test
 #include <boost/test/included/unit_test.hpp>
-#include "ch14_tdd_v1.h"
+#include "ch13_tdd_v1.h"
 
 //declare we begin a test suite and name it "my_suite "
 BOOST_AUTO_TEST_SUITE(tdd_suite)

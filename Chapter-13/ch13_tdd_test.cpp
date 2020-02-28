@@ -1,6 +1,5 @@
-//ch14_tdd_test.cpp
-//#include "ch14_tdd_v1.h"
-#include "ch14_tdd_v2.h"
+//ch13_tdd_test.cpp
+#include "ch13_tdd_v2.h"
 void test_tdd_v1();
 void test_tdd_v2();
 using namespace std;

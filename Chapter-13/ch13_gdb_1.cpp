@@ -1,4 +1,4 @@
-//ch14_gdb_1.cpp
+//ch13_gdb_1.cpp
 #include <iostream>
 float multiple(float x, float y);
 int main()

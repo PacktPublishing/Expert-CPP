@@ -1,4 +1,4 @@
-//ch14_uninit_variable.cpp
+//ch13_uninit_variable.cpp
 #include <iostream>
 int main()
 {
