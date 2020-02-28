@@ -5,21 +5,24 @@
 using namespace std;
 
 //primary class template X with template type parameters
-template<class T, class U> class X {
+template<class T, class U> 
+class X {
 public:
 	T a;
 	U b;
 };
 
 //partially specialization of class template X
-template<class U> class X<int, U> {
+template<class U> 
+class X<int, U> {
 public:
 	int a;
 	U b;
 };
 
 //primary class template Y with template template parameter
-template<template<class T, class U> class V> class Y {
+template<template<class T, class U> class V> 
+class Y {
 public:
 	V<int, char> i;
 	V<char, char> j;
