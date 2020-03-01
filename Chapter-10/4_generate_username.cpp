@@ -1,7 +1,7 @@
 int get_random_number() 
 { 
   // TODO: Implement random number generation.
-  return 1;
+  return 42;
 }
 
 std::string generate_username(const std::string& email) 
