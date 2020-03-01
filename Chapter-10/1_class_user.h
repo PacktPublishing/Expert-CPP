@@ -8,16 +8,16 @@ struct Address
   std::string country;
   std::string city;
   std::string street;
-  float latitude;
-  float longitude;
+  float latitude{};
+  float longitude{};
 };
 
 class User
 {
 public:
-    void User::set_email(const std::string& email)
+    void set_email(const std::string& email)
     {
-        if (!std::regex_match(email, "(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+") {
+        if (!std::regex_match(email, std::regex("(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+"))) {
             throw std::invalid_argument("Invalid email");
         }
         
