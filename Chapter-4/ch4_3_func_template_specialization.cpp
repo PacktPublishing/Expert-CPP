@@ -8,7 +8,7 @@ template <class T> T app_max(T a, T b) { return (a>b ? a : b); }
 //explicit specialization for T=std::string, note instead of comparing a and b, we only comparing a[0] and //b[0] which means the behavior app_max() is specialized.
 template <> std::string app_max<std::string>(std::string a, std::string b) { return (a[0]>b[0] ? a : b); }
 
-void main() {
+int main() {
 	std::string a = "abc", b = "efg";
 	std::cout << app_max(5, 6) << std::endl;   //calls app_max<int>(int,int)
 	std::cout << app_max(a, b) << std::endl;   //calls specialized
