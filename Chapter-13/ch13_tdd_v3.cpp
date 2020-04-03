@@ -43,7 +43,7 @@ Mat<T>::Mat(const Mat<T> &rhs)
 template< class T>
 Mat<T>& Mat<T>::operator=(const Mat<T> &rhs)
 {
-	if (this != &x) {
+	if (this != &rhs) {
 		m_rows = rhs.rows();
 		m_cols = rhs.cols();
 		if (numel() != rhs.numel()) {
@@ -85,25 +85,25 @@ Mat<T> Mat<T>::elementWiseOp(const Mat<T> &x, const Mat<T> &y, const char flag)
 	assert( x.numel() == y.numel() );
 
 	Mat<T> z(x);
-	T* py = y.data();
-	T* pz = z.data();
+	const T* py = y.data();
+	T* pz = z.data2();
 	if (flag == '+') {
-		for (uint32_t i = 0; i < rhs.numel(); ++i, ++py, ++pz) {
+		for (uint32_t i = 0; i < x.numel(); ++i, ++py, ++pz) {
 			*pz += *py;
 		}
 	}
 	else if (flag == '-') {
-		for (uint32_t i = 0; i < rhs.numel(); ++i, ++py, ++pz) {
+		for (uint32_t i = 0; i < x.numel(); ++i, ++py, ++pz) {
 			*pz -= *py;
 		}
 	}
 	else if (flag == '*') {
-		for (uint32_t i = 0; i < rhs.numel(); ++i, ++py, ++pz) {
+		for (uint32_t i = 0; i < x.numel(); ++i, ++py, ++pz) {
 			*pz *= *py;
 		}
 	}
 	else if (flag == '/') {
-		for (uint32_t i = 0; i < rhs.numel(); ++i, ++py, ++pz) {
+		for (uint32_t i = 0; i < x.numel(); ++i, ++py, ++pz) {
 			*pz /= *py;  //todo:check *py is not zero
 		}
 	}

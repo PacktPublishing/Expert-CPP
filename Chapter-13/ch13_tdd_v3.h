@@ -19,16 +19,20 @@ public:
 	Mat<T> operator * (const Mat<T> &rhs);
 	Mat<T> operator / (const Mat<T> &rhs);
 
-	uint32_t rows()  { return m_rows; }
-	uint32_t cols()  { return m_cols; }
-	uint32_t numel() { return m_rows * m_cols;}
+	uint32_t rows()  const { return m_rows; }
+	uint32_t cols()  const { return m_cols; }
+	uint32_t numel() const { return m_rows * m_cols;}
 	bool empty() { return 0==m_rows || 0==m_cols; }
 
 	const T* data() const { 
 		return m_buf; 
 	}
+	
+	T* data2(){ 
+		return m_buf; 
+	}
 
-	bool isSameSize(const Mat<T> &x) {
+	bool isSameSize(const Mat<T> &x) const {
 		return ( m_rows == x.rows() && m_cols == x.cols() );
 	}
 
