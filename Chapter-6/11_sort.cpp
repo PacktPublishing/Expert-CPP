@@ -1,14 +1,23 @@
 #include <algorithm>
 #include <vector>
 #include <list>
+#include <iostream>
 
 int main()
 {
   std::vector<int> vec;
   // insert elements into the vector
-  std::list<int> lst;
-  // insert elements into the list
+  vec.push_back(4);
+  vec.push_back(11);
+  vec.push_back(9);
+  for (auto& v : vec) {
+    std::cout << v << " ";
+  }
+  std::cout << std::endl;
 
   std::sort(vec.begin(), vec.end());
-  std::sort(lst.begin(), lst.end());
+  for (auto& v : vec) {
+    std::cout << v << " ";
+  }
+  std::cout << std::endl;
 }

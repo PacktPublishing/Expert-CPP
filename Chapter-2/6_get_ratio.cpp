@@ -1,3 +1,5 @@
+#include <iostream>
+
 auto get_ratio(bool minimum) {
     if (minimum) {
         return 12;    
@@ -6,6 +8,6 @@ auto get_ratio(bool minimum) {
 }
 
 auto main() {
-    get_ratio(true);    
+    std::cout << get_ratio(true) << std::endl;    
     return 0;
 }

@@ -14,4 +14,6 @@ int main() {
   int tripled = triple_it(test);
   std::cin >> test;
   int another_tripled = triple_it(test);
+  std::cout << tripled << std::endl;
+  std::cout << another_tripled << std::endl;
 }  

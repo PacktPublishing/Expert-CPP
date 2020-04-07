@@ -1,4 +1,6 @@
 #include <string>
+#include <iostream>
+// #define DEBUG 1
 
 void log(const std::string& msg) {
 #if DEBUG

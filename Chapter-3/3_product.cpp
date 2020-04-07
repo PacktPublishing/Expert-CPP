@@ -1,3 +1,6 @@
+#include <iostream>
+#include <string>
+
 struct Product {
   std::string name;
   double price;
@@ -11,4 +14,6 @@ int main()
   Product tshirt;
   Product* ptr = &book;
   Product& ref = tshirt;
+  book.name = "Expert C++";
+  std::cout << ptr->name << std::endl;
 }
