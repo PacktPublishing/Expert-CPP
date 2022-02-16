@@ -2,7 +2,7 @@
 
 <a href="https://www.packtpub.com/product/expert-c/9781838552657?utm_source=github&utm_medium=repository&utm_campaign=9781838552657"><img src="https://static.packt-cdn.com/products/9781838552657/cover/smaller" alt="About the Authors" height="256px" align="right"></a>
 
-This is the code repository for [About the Authors](https://www.packtpub.com/product/expert-c/9781838552657?utm_source=github&utm_medium=repository&utm_campaign=9781838552657), published by Packt.
+This is the code repository for [Expert C++](https://www.packtpub.com/product/expert-c/9781838552657?utm_source=github&utm_medium=repository&utm_campaign=9781838552657), published by Packt.
 
 **Become a proficient programmer by learning coding best practices with C++17 and C++20's latest features**
 
