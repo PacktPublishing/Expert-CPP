@@ -39,7 +39,7 @@ This C++ book is for experienced C++ developers who are looking to take their kn
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781838552657_ColorImages.pdf).
 
 ## Errata
-* Page 93 In second figure the return type of operator overloaded + and - should be of type Money
+* Chapter 3, Page 93 In second figure the return type of operator overloaded + and - should be of type Money
 
 
 ## Get to Know the Author
