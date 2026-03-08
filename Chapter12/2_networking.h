@@ -36,7 +36,7 @@ void Networking::start_server()
   server.sin_port = htons(port);
   server.sin_addr.s_addr = INADDR_ANY;
 
-  bind(s, (struct sockaddr*)&server, sizeof(server));
-  listen(s, MAX_QUEUED_CONNECTIONS);
+  bind(socket_, (struct sockaddr*)&server, sizeof(server));
+  listen(socket_, MAX_QUEUED_CONNECTIONS);
   // the accept() should be here
 }
